@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ForestHealthPlatform.props" />
+</Project>
