@@ -48,13 +48,14 @@ Current Kanban board : https://trello.com/b/NmcAvTbi/forest-tasks
 2. Requirements Gathering
    - Gather functional and non-functional requirements.
    - Define user stories and use cases.
+   - Create tickets and backlog on trello
 3. System Design
    - Design the database schema in PostgreSQL.
+   - Create the EF models in .NET.
    - Design the frontend UI using React.
    - Define the API endpoints in .NET.
 4. Development
    - Implement user authentication (login functionality).
-   - Develop geotagged photo upload feature.
    - Create data collection forms for environmental parameters.
    - Implement wildlife observation forms.
 5. Integration
