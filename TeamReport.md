@@ -21,3 +21,5 @@
 - Basic API for CRUD operations on images and metadata
 
 UI/UX can be done in figma or something simialar backend will be dotnet core and database will be postgresql - For basic prototyping can use Typescript/React with a mobile design focus
+
+Current Kanban board : https://trello.com/b/NmcAvTbi/forest-tasks
