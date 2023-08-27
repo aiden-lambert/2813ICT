@@ -67,3 +67,12 @@ Current Kanban board : https://trello.com/b/NmcAvTbi/forest-tasks
    - Create user manual.
    - Create developer documentation.
    - Create project report.
+
+### Project Dependencies and PDM:
+
+1. Requirements Gathering (2) depends on Project Initiation (1).
+2. System Design (3) depends on Requirements Gathering (2).
+3. Development (4) depends on System Design (3).
+4. Integration (5) depends on Development (4).
+5. Testing (6) depends on Integration (5) and Development (4).
+6. Documentation (7) can start in parallel with Development (4) and Integration (5).
