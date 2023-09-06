@@ -105,13 +105,17 @@ Current Kanban board : https://trello.com/b/NmcAvTbi/forest-tasks
 
 10. As a Citizen Scientist, I want the user interface to be user-friendly, with a mobile-focused design, so that it's easy to use in the field.
 
-Reliability: 11. As a Citizen Scientist, I want the app to reliably store and save the data I input, even if I lose network connectivity temporarily.
+### Reliability:
+
+11. As a Citizen Scientist, I want the app to reliably store and save the data I input, even if I lose network connectivity temporarily.
+
+###
 
 Performance: 12. As a Project Team member, I want the app to perform efficiently, allowing quick data entry and retrieval.
 
-Supportability: 13. As a Project Manager, I want the app to be maintainable, with the ability to receive updates and bug fixes easily.
+### Supportability:
 
-Now, let's create a UML Use Case diagram with a description of one use case in detail:
+13. As a Project Manager, I want the app to be maintainable, with the ability to receive updates and bug fixes easily.
 
 ## Use Case:
 
