@@ -49,6 +49,7 @@ Current Kanban board : https://trello.com/b/NmcAvTbi/forest-tasks
    - Gather functional and non-functional requirements.
    - Define user stories and use cases.
    - Create tickets and backlog on trello
+   - Identify prototypes to be developed.
 3. System Design
    - Design the database schema in PostgreSQL.
    - Create the EF models in .NET.
@@ -77,3 +78,20 @@ Current Kanban board : https://trello.com/b/NmcAvTbi/forest-tasks
 4. Integration (5) depends on Development (4).
 5. Testing (6) depends on Integration (5) and Development (4).
 6. Documentation (7) can start in parallel with Development (4) and Integration (5).
+
+## Use Case:
+
+### Use Case: Record Environmental Data
+
+Description:
+
+Actor: Citizen Scientist
+Preconditions: Citizen Scientist is logged into the app and is in the data collection mode.
+Main Flow:
+Citizen Scientist selects the "Record Environmental Data" use case from the app's main menu.
+The app displays a form with fields to input landscape position, vegetation type, burn severity, flora recovery, fauna observations, and more.
+Citizen Scientist fills in the relevant data fields and submits the form.
+The app validates and stores the data in a secure database.
+Postconditions: The recorded environmental data is saved and can be accessed for analysis by Environmental Scientists or viewing by End-Users.
+Alternate Flow 1: If the app detects any missing or invalid data, it prompts the Citizen Scientist to correct the errors before submission.
+Alternate Flow 2: If the Citizen Scientist loses network connectivity during data entry, the app stores the data locally and syncs it with the server once connectivity is restored.
