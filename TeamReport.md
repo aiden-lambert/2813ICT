@@ -79,6 +79,40 @@ Current Kanban board : https://trello.com/b/NmcAvTbi/forest-tasks
 5. Testing (6) depends on Integration (5) and Development (4).
 6. Documentation (7) can start in parallel with Development (4) and Integration (5).
 
+## FURPS:
+
+### Functionality:
+
+1. As a Citizen Scientist, I want to create a user account and log in securely to the app so that my data remains private.
+
+2. As a Citizen Scientist, I want to input data about the landscape position, including flat/undulating, ridge or hill, slope, and valley/gully.
+
+3. As a Citizen Scientist, I want to select the vegetation type and its development stage, including Eucalypt forest (fern or herb), Eucalypt forest (grassy), Eucalypt forest (shrubby), Rainforest, and Riparian, and their respective stages (old, mature, regrowth, mixed, few trees present).
+
+4. As a Citizen Scientist, I want to record the burn severity and recovery stage of flora, including severity (unburnt, low, moderate, high, extreme) and various recovery stages for ground layer, shrub layer, sub-canopy layer, and tallest tree layer.
+
+5. As a Citizen Scientist, I want to document the species name or animal type of any fauna noticed during the survey.
+
+6. As a Citizen Scientist, I want to record bird or animal calls in the survey location.
+
+7. As a Citizen Scientist, I want to note the state of any flowering plants in the ground layer, shrub layer, and upper canopy layer.
+
+8. As a Citizen Scientist, I want the option to capture altitude and barometric pressure.
+
+9. As a Citizen Scientist, I want the option to record compass direction and accelerometer data.
+
+### Usability:
+
+10. As a Citizen Scientist, I want the user interface to be user-friendly, with a mobile-focused design, so that it's easy to use in the field.
+
+Reliability: 11. As a Citizen Scientist, I want the app to reliably store and save the data I input, even if I lose network connectivity temporarily.
+
+Performance: 12. As a Project Team member, I want the app to perform efficiently, allowing quick data entry and retrieval.
+
+Supportability: 13. As a Project Manager, I want the app to be maintainable, with the ability to receive updates and bug fixes easily.
+
+Now, let's create a UML Use Case diagram with a description of one use case in detail:
+
 ## Use Case:
 
 ### Use Case: Record Environmental Data
