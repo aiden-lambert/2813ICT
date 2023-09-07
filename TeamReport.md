@@ -135,3 +135,30 @@ Alternate Flow 1: If the app detects any missing or invalid data, it prompts the
 Alternate Flow 2: If the Citizen Scientist loses network connectivity during data entry, the app stores the data locally and syncs it with the server once connectivity is restored.
 
 ![Citizen Scientist Use Case](./Files/citizen-scientist-submit-state.jpg)
+
+## Activity Diagram Description:
+
+### Start: The diagram begins with the "Start" activity.
+
+### Login: The Environmental Scientist starts by logging into the app with their credentials.
+
+### Access Location Information:
+
+The Environmental Scientist accesses location information to view survey data.
+This includes landscape position, vegetation type, burn severity, and more.
+Flag Area for Review:
+
+The Environmental Scientist has the option to flag an area if they suspect a recent bushfire.
+If a bushfire is suspected, the area is flagged for further review.
+Review Data:
+
+The Environmental Scientist reviews the collected data for accuracy and relevance.
+If any data or photos are incorrect or unclear, they have the option to reject or place them in a separate file for further investigation.
+Perform Backend Operations:
+
+### Performs backend operations on the database to:
+
+Review flagged areas and investigate bushfire reports.
+Validate and verify survey data for research purposes.
+Manage rejected or unclear photos and data.
+End: The diagram concludes with the "End" activity.
