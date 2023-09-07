@@ -134,6 +134,8 @@ Postconditions: The recorded environmental data is saved and can be accessed for
 Alternate Flow 1: If the app detects any missing or invalid data, it prompts the Citizen Scientist to correct the errors before submission.
 Alternate Flow 2: If the Citizen Scientist loses network connectivity during data entry, the app stores the data locally and syncs it with the server once connectivity is restored.
 
+### State Diagram
+
 ![Citizen Scientist Use Case](./Files/citizen-scientist-submit-state.jpg)
 
 ## Activity Diagram Description:
