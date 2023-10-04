@@ -14,23 +14,24 @@ import { users } from "../assets/FakeData";
 import { useNavigate } from "react-router-dom";
 
 function Homepage() {
-  const [username, setUsername] = React.useState<string>("");
-  const [password, setPassword] = React.useState<string>("");
-  const [isLogin, setIsLogin] = React.useState<boolean>(false);
+  const [xUsername, setUsername] = React.useState("");
+  const [password, setPassword] = React.useState("");
+  const [isLogin, setIsLogin] = React.useState(false);
   const navigate = useNavigate();
 
   const validateLogin = () => {
-    const user = users.find((user) => user.username === username);
+    const user = users.find((user) => user.username === xUsername);
     if (user) {
       if (user.password === password) {
         setIsLogin(true);
+      } else {
+        alert("Incorrect username or password");
       }
     }
   };
 
   useEffect(() => {
     if (isLogin) {
-      console.log("login");
       navigate("/upload");
     }
   }, [isLogin]);
@@ -53,6 +54,7 @@ function Homepage() {
           <Input
             placeholder="Username"
             onChange={(e) => setUsername(e.target.value)}
+            data-testid="username-input"
           />
           <Input
             placeholder="Password"
