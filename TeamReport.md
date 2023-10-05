@@ -181,3 +181,41 @@ Wait for test output
 All test files can be found within the test directory of this repository - for the purposes of the prototype communication with a database was not included JS objects containing mocked data were used instead.
 
 Following the practise of equivalence partitioning the login was tested in 3 cases - rendering, valid. As no constraints exist on the size of inputs it was not tested.
+
+GQM:
+
+1. ### Goal: Improve Code Quality
+
+Question: How many code defects are identified and resolved during development?
+Metric: Defect Density (Defects per KLOC - Thousand Lines of Code)
+Justification: Defect density is a well-established metric for assessing code quality. A lower defect density indicates higher quality code. It is reliable as it focuses on actual code issues that impact software quality.
+Data Collection: Track defects using a bug tracking system, categorize them by severity, and calculate defect density for each release.
+
+2. ### Goal: Enhance Development Productivity
+
+Question: What is the average time taken to complete a user story or feature?
+Metric: Cycle Time (Average time from task assignment to completion)
+Justification: Cycle time measures how quickly tasks are completed, reflecting development team productivity. It's reliable as it directly relates to project efficiency.
+Data Collection: Record the start and end times for each task or user story in a project management tool and calculate the average cycle time.
+
+3. ### Goal: Ensure Timely Delivery
+
+Question: How often do project milestones meet their planned deadlines?
+Metric: Milestone On-time Delivery Rate (Percentage of milestones met on time)
+Justification: Timely delivery is crucial. This metric's validity is evident in its alignment with project scheduling goals.
+Data Collection: Maintain a project schedule with milestones and deadlines. Regularly assess and update the status of each milestone to determine if it was delivered on time.
+
+4. ### Goal: Enhance Collaboration
+
+Question: Are team members actively participating in collaborative activities?
+Metric: Collaboration Index (Number of contributions to collaborative tools like version control or documentation repositories)
+Justification: Collaboration is vital for project success. The metric measures team engagement and the reliability comes from tracking specific actions.
+Data Collection: Monitor contributions made by team members to shared repositories using version control systems or documentation platforms.
+
+5. ### Goal: Improve Code Maintainability
+
+Question: How often is code refactored to improve maintainability?
+Metric: Code Refactoring Frequency (Number of refactorings per sprint)
+Justification: Code maintainability is critical for long-term sustainability. The metric assesses proactive maintenance efforts.
+Data Collection: Track the number of code refactorings performed during each sprint or development cycle.
+To ensure the validity and reliability of these metrics, it's essential to define clear measurement definitions, standardize data collection processes, and regularly review and refine the metrics based on feedback and evolving project goals. Additionally, validation can be done through comparison with industry benchmarks or historical project data. Reliable and consistent data collection tools and practices are key to obtaining meaningful insights from these metrics and using them effectively to drive project improvements.
