@@ -1,6 +1,12 @@
 /** @jest-environment jsdom */
 import React from "react";
-import { render, screen, fireEvent, cleanup } from "@testing-library/react";
+import {
+  render,
+  screen,
+  fireEvent,
+  cleanup,
+  waitFor,
+} from "@testing-library/react";
 import Homepage from "../Pages/Homepage";
 import "@testing-library/jest-dom";
 import { ChakraProvider } from "@chakra-ui/react";
@@ -57,5 +63,29 @@ describe("Homepage", () => {
     fireEvent.click(loginButton[0]);
 
     expect(mockedUsedNavigate).toHaveBeenCalledTimes(1);
+  });
+
+  it("displays an error message for invalid password", async () => {
+    const alertSpy = jest.spyOn(window, "alert").mockImplementation(() => {});
+
+    render(
+      <ChakraProvider>
+        <RouterProvider router={router} />
+        <Homepage />
+      </ChakraProvider>
+    );
+    const usernameInput = screen.getAllByTestId("username-input");
+    const passwordInput = screen.getAllByPlaceholderText("Password");
+    const loginButton = screen.getAllByText("Login");
+
+    fireEvent.change(usernameInput[0], { target: { value: "admin" } });
+    fireEvent.change(passwordInput[0], { target: { value: "invalid" } });
+    fireEvent.click(loginButton[0]);
+
+    await waitFor(() => expect(alertSpy).toHaveBeenCalled());
+
+    expect(alertSpy).toHaveBeenCalledWith("Incorrect username or password");
+
+    alertSpy.mockRestore();
   });
 });
