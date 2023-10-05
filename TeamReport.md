@@ -179,3 +179,5 @@ Wait for test output
 ```
 
 All test files can be found within the test directory of this repository - for the purposes of the prototype communication with a database was not included JS objects containing mocked data were used instead.
+
+Following the practise of equivalence partitioning the login was tested in 3 cases - rendering, valid. As no constraints exist on the size of inputs it was not tested.
