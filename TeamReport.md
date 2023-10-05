@@ -165,4 +165,17 @@ Validate and verify survey data for research purposes.
 Manage rejected or unclear photos and data.
 End: The diagram concludes with the "End" activity.
 
-test
+### Test plan
+
+Front end will be tested using React-Testing-Library and jest as they give the ability to mock certain API calls allowing for flexible prototype testing in lieu of real API calls and Postgres data. The tests themselves will be considered unit tests and can be run from this repositry by doing the following:
+
+```
+Navigate to the PrototypeBase/ForestHealthPlatform/clientapp directory
+Run NPM install or Yarn to install the project dependencies
+
+Run yarn test / npx test
+
+Wait for test output
+```
+
+All test files can be found within the test directory of this repository - for the purposes of the prototype communication with a database was not included JS objects containing mocked data were used instead.
