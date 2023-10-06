@@ -7,9 +7,12 @@ import {
   Textarea,
   Button,
 } from "@chakra-ui/react";
-import fs from "fs";
 
-function UploadPage() {
+interface UploadPageProps {
+  onSubmit?: (data: any) => void;
+}
+
+const UploadPage: React.FC<UploadPageProps> = ({ onSubmit }) => {
   const [landscapePosition, setLandscapePosition] = useState("");
   const [vegetationType, setVegetationType] = useState("");
   const [vegetationStage, setVegetationStage] = useState("");
@@ -288,6 +291,6 @@ function UploadPage() {
       <Button type="submit">Submit</Button>
     </form>
   );
-}
+};
 
 export default UploadPage;

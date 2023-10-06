@@ -18,7 +18,6 @@ jest.mock("../assets/forest.jpg", () => "forest.jpg"); // Mock the image import
 
 const router = createBrowserRouter([
   { path: "/", element: <Homepage /> },
-  { path: "/login", element: <LoginPage /> },
   { path: "/upload", element: <UploadPage /> },
 ]);
 

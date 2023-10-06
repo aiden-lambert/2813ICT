@@ -2,6 +2,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LoginPage from "./Pages/LoginPage.tsx";
 import UploadPage from "./Pages/UploadPage.tsx";
+import Navbar from "./Components/Navbar.tsx";
 
 const router = createBrowserRouter([
   { path: "/", element: <Homepage /> },
@@ -14,6 +15,7 @@ import Homepage from "./Pages/Homepage.tsx";
 function App() {
   return (
     <ChakraProvider>
+      <Navbar />
       <RouterProvider router={router} />
     </ChakraProvider>
   );
