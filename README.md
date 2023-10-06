@@ -1,14 +1,10 @@
 # 2813ICT
 
-Clone repo to make changes to the TeamReport
-Will set up the basic project repo shortly
+To run the frontend :
 
-Install the dotnet SDK from Msoft
-Navigate to the project folder and run the following commands
-`dotnet nuget add source "https://api.nuget.org/v3/index.json" --name "NuGet official package source"`
+-   Clone the repository
+-   Navigate to the PrototypeBase/ForestHealthPlatform/clientapp
+-   Install node dependencies with NPM or yarn
+-   Run the application with `npm run dev / yarn run dev`
 
-`dotnet restore`
-
-You can then run the app qith `dotnet run`
-
-Nagivate to /app to see the app running
+To run the tests in the base of the clinetapp run `npx test` or `yarn test`
